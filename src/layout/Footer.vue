@@ -52,7 +52,7 @@ export default defineComponent({
     const icons: Icon[] = [
       {
         name: "GithubOutlined",
-        link: "https://github.com/Liszt21/Sliya"
+        link: "https://github.com/Liszt21/Eliya"
       },
       {
         name: "TwitterOutlined",
