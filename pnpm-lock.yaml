@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@ant-design/icons-vue': ^6.0.1
   '@vitejs/plugin-vue': ^1.6.0
   '@vue/compiler-sfc': ^3.2.6
   ant-design-vue: ^2.2.7
@@ -16,6 +17,7 @@ specifiers:
   vuex: ^4.0.2
 
 dependencies:
+  '@ant-design/icons-vue': 6.0.1_vue@3.2.8
   ant-design-vue: 2.2.7_3ea067dc3f83cd515fa8488b0fe7b900
   axios: 0.21.4
   less: 4.1.1
