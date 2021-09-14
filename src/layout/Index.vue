@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Footer from "./Footer.vue";
+</script>
 
 <template lang="pug">
 a-layout.container
@@ -11,7 +13,8 @@ a-layout.container
       a-breadcrumb-item Home
     div.content
       slot
-  a-layout-footer Eliya @2021 Created by Liszt21
+  a-layout-footer
+    Footer
 </template>
 
 <style lang="less" scoped>

@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Layout from "./layout/Index.vue";
+</script>
 
-<template>
-  <router-view />
+<template lang="pug">
+Layout
+  router-view
 </template>
 
 <style>
