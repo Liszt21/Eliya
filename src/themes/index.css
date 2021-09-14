@@ -1,0 +1,9 @@
+:root[theme="dark"] {
+  --primary-color: red;
+  --main-bg-color: black;
+}
+
+:root[theme="light"] {
+  --primary-color: blue;
+  --main-bg-color: white;
+}
