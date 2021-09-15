@@ -1,0 +1,28 @@
+<script lang="ts" setup></script>
+
+<template lang="pug">
+//- TODO adjust size
+a-row(:gutter="2")
+  a-col.logo(:xl="4" :md="2" :sm="0" :xs="0") Eliya 
+  a-col(:xl="12" :md="14" :sm="18" :xs="22")
+    a-menu.navbar(theme="dark")
+      a-menu-item(key="home") Home
+      a-menu-item(key="about") About
+  a-col.search(:xl="4" :md="4" :sm="4" :xs="0")
+    a-input
+  a-col.user(:xl="4" :md="4" :sm="2" :xs="2")
+    span User
+</template>
+
+<style lang="less" scoped>
+.logo,
+.user {
+  color: white;
+}
+
+.navbar {
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+</style>
