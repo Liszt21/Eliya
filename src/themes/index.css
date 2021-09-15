@@ -3,10 +3,12 @@
 }
 
 :root[theme="light"] {
-  --primary-color: hsl(var(--primary-hue), 50%, 90%);
+  /* --primary-color: eval("hsl(var(--primary-hue), 50%, 90%)"); */
+  --primary-color: #123456;
   --main-bg-color: white;
 }
 
 :root[theme="dark"] {
   filter: invert(1);
+  @import "ant-design-vue/dist/antd.dark.css";
 }
