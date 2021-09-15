@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import Footer from "./Footer.vue";
+import Header from "./Header.vue";
 </script>
 
 <template lang="pug">
 a-layout.container
-  a-layout-header
-    div.logo
-    a-menu(theme="dark")
-      a-menu-item(key="1") Home
+  a-layout-header.container-header
+    Header
   a-layout-content
     a-breadcrumb
       a-breadcrumb-item Home
@@ -20,11 +19,14 @@ a-layout.container
 <style lang="less" scoped>
 .container {
   min-height: 100vh;
+  &-header {
+    padding: 0 !important;
+  }
 }
 
 .content {
+  color: var(--primary-color, blue);
   background-color: white;
   min-height: 81vh;
-  margin: 0 20px;
 }
 </style>

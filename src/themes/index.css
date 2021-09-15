@@ -1,0 +1,12 @@
+:root {
+  --primary-hue: 240;
+}
+
+:root[theme="light"] {
+  --primary-color: hsl(var(--primary-hue), 50%, 90%);
+  --main-bg-color: white;
+}
+
+:root[theme="dark"] {
+  filter: invert(1);
+}
