@@ -2,15 +2,15 @@
 
 <template lang="pug">
 //- TODO adjust size
-a-row(:gutter="2")
+a-row()
   a-col.logo(:xl="4" :md="2" :sm="0" :xs="0") Eliya 
-  a-col(:xl="12" :md="14" :sm="18" :xs="22")
+  a-col(:xl="12" :md="14" :sm="16" :xs="20")
     a-menu.navbar(theme="dark")
       a-menu-item(key="home") Home
       a-menu-item(key="about") About
-  a-col.search(:xl="4" :md="4" :sm="4" :xs="0")
+  a-col.search(:xl="4" :md="5" :sm="6" :xs="0")
     a-input
-  a-col.user(:xl="4" :md="4" :sm="2" :xs="2")
+  a-col.user(:xl="4" :md="3" :sm="2" :xs="4")
     span User
 </template>
 

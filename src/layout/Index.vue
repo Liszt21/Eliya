@@ -28,6 +28,5 @@ a-layout.container
   color: var(--primary-color, blue);
   background-color: white;
   min-height: 81vh;
-  margin: 0 20px;
 }
 </style>
