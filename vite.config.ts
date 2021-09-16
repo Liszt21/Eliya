@@ -1,23 +1,26 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  server: {
-    proxy: {
-      '/api': {
-        target: "http://localhost:9715",
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, '')
+export default ({ mode }) => {
+  return defineConfig({
+    plugins: [vue()],
+    server: {
+      proxy: {
+        '/sliya': {
+          target: process.env.VITE_API_URL || "http://localhost:9715",
+          secure: mode === "production" ? true : false,
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/sliya/, '')
+        }
+      }
+    },
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true
+        }
       }
     }
-  },
-  css: {
-    preprocessorOptions: {
-      less: {
-        javascriptEnabled: true
-      }
-    }
-  }
-})
+  })
+}
