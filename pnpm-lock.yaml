@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@ant-design/icons-vue': ^6.0.1
+  '@types/node': ^16.9.1
   '@vitejs/plugin-vue': ^1.6.0
   '@vue/compiler-sfc': ^3.2.6
   ant-design-vue: ^2.2.7
@@ -28,6 +29,7 @@ dependencies:
   vuex: 4.0.2_vue@3.2.8
 
 devDependencies:
+  '@types/node': 16.9.1
   '@vitejs/plugin-vue': 1.6.0_@vue+compiler-sfc@3.2.8
   '@vue/compiler-sfc': 3.2.8
   typescript: 4.4.2
@@ -116,6 +118,10 @@ packages:
   /@types/lodash/4.14.172:
     resolution: {integrity: sha512-/BHF5HAx3em7/KkzVKm3LrsD6HZAXuXO1AJZQ3cRRBZj4oHZDviWPYu0aEplAqDFNHZPW6d3G7KN+ONcCCC7pw==}
     dev: false
+
+  /@types/node/16.9.1:
+    resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
+    dev: true
 
   /@vitejs/plugin-vue/1.6.0_@vue+compiler-sfc@3.2.8:
     resolution: {integrity: sha512-n3i8htn8pTg9M+kM3cnEfsPZx/6ngInlTroth6fA1LQTJq5aTVQ8ggaE5pPoAy9vCgHPtcaXMzwpldhqRAkebQ==}
