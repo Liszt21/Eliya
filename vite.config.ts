@@ -8,7 +8,7 @@ export default ({ mode }) => {
     server: {
       proxy: {
         '/sliya': {
-          target: process.env.VITE_API_URL || "http://localhost:9715",
+          target: process.env.VITE_API_SLIYA || "http://localhost:9715",
           secure: mode === "production" ? true : false,
           changeOrigin: true,
           rewrite: path => path.replace(/^\/sliya/, '')

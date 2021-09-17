@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-import axios from "axios";
+import api from "../apis";
 
 const message = ref("ping...");
 
-axios.get("/sliya/ping").then((response) => {
+api.ping().then((response) => {
   message.value = response.data.message;
 });
 </script>

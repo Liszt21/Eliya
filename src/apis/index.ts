@@ -1,5 +1,5 @@
-import service from "./base"
+import sliya from "./sliya"
 
 export default {
-  ping: (payload: any) => { return service.get("/ping") }
+  ...sliya
 }
