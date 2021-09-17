@@ -9,5 +9,5 @@ declare module '*.vue' {
 
 interface ImportMetaEnv {
   VITE_APP_TITLE: string;
-  ELIYA_API_URL: string;
+  VITE_API_SLIYA: string;
 }
